@@ -16,4 +16,4 @@ def bmi (height, weight):
         return 'Obese'
 
 quote, BMI = bmi(height, weight)
-print('Body Mass Index (BMI): {} ({})'. format(BMI, quote))
+print('Body Mass Index (BMI): {:.2f} ({})'. format(BMI, quote))
