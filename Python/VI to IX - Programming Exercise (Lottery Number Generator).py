@@ -1,16 +1,10 @@
 import random
 
-def lotteryNumberGenerator():
+lottery_number = []
 
-    loop = 0
-    lotteryNumbers = [0]*7
-
-    while(loop < len(lotteryNumbers)):
-        lotteryNumbers[loop] = random.randint(0, 9)
-        print(lotteryNumbers[loop], end=" ")
-        loop+=1
-
+for i in range(7):
+    lottery_number.append(random.randint(0,9))
+    
 str_name = str(input("Full Name: "))
-
-print("Generated Lottery Numbers: ", end="")
-lotteryNumberGenerator()
+print("Number 1: Lottery Number Generator")
+print("Generated Lottery Numbers:",lottery_number)
